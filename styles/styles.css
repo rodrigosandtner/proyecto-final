@@ -170,9 +170,6 @@
 .mainServicios .cardServicios:hover {
   box-shadow: 5px 5px 15px rgba(180, 180, 180, 0.9);
 }
-.mainServicios .cardServicios .card-text {
-  border: solid 1 px red;
-}
 
 /*Pagina Contacto*/
 .mainContacto {
@@ -180,15 +177,18 @@
   color: rgb(255, 187, 0);
 }
 .mainContacto .titulosContacto {
+  font-family: "Poppins", sans-serif;
   margin: 30px 0px 30px 0px;
 }
 .mainContacto .textosRedesContacto {
   margin-left: 20px;
   font-size: 14px;
   color: #ffffff;
+  font-family: "Poppins", sans-serif;
 }
 .mainContacto .labelForm {
   color: #ffffff;
+  font-family: "Poppins", sans-serif;
 }
 
 .footer {

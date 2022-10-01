@@ -109,10 +109,6 @@
             box-shadow: 5px 5px 15px rgba(180, 180, 180, 0.9);
         }
 
-        .card-text{
-            border: solid 1 px red;
-        }
-
     }
 }
 
@@ -121,18 +117,23 @@
 .mainContacto {
     background-color: $backgroundMain;
     color: $primary-color;
+    
 
     .titulosContacto {
+        font-family: $poppins;
         margin: 30px 0px 30px 0px;
     }
 
     .textosRedesContacto {
         margin-left: 20px;
-        font-size: 14px;
+        font-size: $fontSize2;
         color: $secondary-color;
+        font-family: $poppins;
+    
     }
     .labelForm{
         color: $secondary-color;
+        font-family: $poppins;
     }
 
 }
