@@ -1,0 +1,9 @@
+/*cards de pagina Servicios*/
+.cardServicios {
+    @include cards ($textColor: #803F40, $bgColor:#C9C9C9, $fontSize:16px);
+}
+
+.card-titleServicios{
+    color: $card-title;
+    margin-top: 15px;
+}

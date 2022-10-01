@@ -1,0 +1,220 @@
+/* HEADER */
+.header {
+  height: auto;
+  background-image: linear-gradient(to bottom, rgb(2, 2, 2), black);
+}
+.header .navLogo {
+  margin: 20px 20px 20px 20px;
+}
+.header .navLogo:hover {
+  transform: scale(1.3, 1.3);
+}
+.header .textoLogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.header .textoLogo h3 {
+  color: rgb(255, 187, 0);
+  font-family: "Dancing Script";
+}
+.header .textoLogo h5 {
+  color: #ffffff;
+  font-size: 12px;
+}
+.header ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+.header ul li {
+  text-decoration: none;
+  color: rgb(255, 187, 0);
+  font-size: 20px;
+  text-align: center;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin: 10px 10px 10px 10px;
+  background-color: rgba(0, 0, 0, 0.459);
+  font-family: "Poppins", sans-serif;
+  transition: 0.3s;
+}
+.header ul li:hover {
+  transform: scale(1.2, 1.2);
+}
+.header ul li a {
+  text-decoration: none;
+  color: rgb(255, 187, 0);
+}
+
+/* PAGINA INICIO */
+.mainInicio {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.1) 65%, rgb(0, 0, 0) 70%);
+}
+.mainInicio .textoInicio {
+  font-family: "Dancing Script", cursive;
+  font-size: 40px;
+  position: relative;
+  -webkit-animation-name: animacionTexto;
+          animation-name: animacionTexto;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+@-webkit-keyframes animacionTexto {
+  0% {
+    color: rgb(226, 185, 97);
+    left: -30px;
+  }
+  50% {
+    color: rgba(148, 79, 0, 0.753);
+    left: 30px;
+  }
+  100% {
+    color: rgb(226, 185, 97);
+    left: -30px;
+  }
+}
+@keyframes animacionTexto {
+  0% {
+    color: rgb(226, 185, 97);
+    left: -30px;
+  }
+  50% {
+    color: rgba(148, 79, 0, 0.753);
+    left: 30px;
+  }
+  100% {
+    color: rgb(226, 185, 97);
+    left: -30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mainInicio .textoInicio {
+    -webkit-animation-duration: 15s;
+            animation-duration: 15s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  @-webkit-keyframes animacionTexto {
+    0% {
+      color: rgb(226, 185, 97);
+      left: -250px;
+    }
+    50% {
+      color: rgba(148, 79, 0, 0.753);
+      left: 250px;
+    }
+    100% {
+      color: rgb(226, 185, 97);
+      left: -249px;
+    }
+  }
+  @keyframes animacionTexto {
+    0% {
+      color: rgb(226, 185, 97);
+      left: -250px;
+    }
+    50% {
+      color: rgba(148, 79, 0, 0.753);
+      left: 250px;
+    }
+    100% {
+      color: rgb(226, 185, 97);
+      left: -249px;
+    }
+  }
+}
+.mainInicio .imgInicio {
+  width: 100%;
+  z-index: -1;
+}
+
+/*Pagina Galeria*/
+.mainGaleria {
+  background-color: rgb(0, 0, 0);
+  background-image: linear-gradient(to bottom, black, #020407);
+}
+.mainGaleria .imgCarousel {
+  border: solid 20px rgb(218, 217, 217);
+  margin: 30px;
+}
+
+/*Pagina Quien Soy*/
+.mainQuienSoy {
+  background-color: rgb(0, 0, 0);
+}
+.mainQuienSoy .parrafoQuienSoy {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+.mainQuienSoy .imgQuienSoy {
+  width: 60%;
+  height: auto;
+}
+
+.mainServicios {
+  background-color: rgb(0, 0, 0);
+}
+.mainServicios .cardServicios {
+  border: solid 2px rgb(0, 0, 0);
+  border-radius: 18px;
+  background: white;
+}
+.mainServicios .cardServicios:hover {
+  box-shadow: 5px 5px 15px rgba(180, 180, 180, 0.9);
+}
+.mainServicios .cardServicios .card-text {
+  border: solid 1 px red;
+}
+
+/*Pagina Contacto*/
+.mainContacto {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 187, 0);
+}
+.mainContacto .titulosContacto {
+  margin: 30px 0px 30px 0px;
+}
+.mainContacto .textosRedesContacto {
+  margin-left: 20px;
+  font-size: 14px;
+  color: #ffffff;
+}
+.mainContacto .labelForm {
+  color: #ffffff;
+}
+
+.footer {
+  background-image: linear-gradient(to bottom, #020407, #000000);
+  height: 200px;
+}
+.footer .textoFooter {
+  font-size: 16px;
+  color: rgb(255, 187, 0);
+}
+.footer .logoRedesFooter {
+  width: 40px;
+  height: 40px;
+}
+
+/*cards de pagina Servicios*/
+.cardServicios {
+  border: solid 3px rgb(170, 170, 170);
+  color: #803F40;
+  background-color: #C9C9C9;
+  font-size: 16px;
+  border-radius: 10px;
+  margin: 40px;
+}
+
+.card-titleServicios {
+  color: rgb(0, 0, 0);
+  margin-top: 15px;
+}/*# sourceMappingURL=styles.css.map */

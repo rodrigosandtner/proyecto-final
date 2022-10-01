@@ -1,0 +1,138 @@
+/* PAGINA INICIO */
+.mainInicio {
+    @extend %displayMain !optional;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.1)65%, rgb(0, 0, 0) 70%);
+
+
+
+    .textoInicio {
+        font-family: 'Dancing Script', cursive;
+        font-size: 40px;
+        position: relative;
+        animation-name: animacionTexto;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+
+        @keyframes animacionTexto {
+            0% {
+                color: rgb(226, 185, 97);
+                left: -30px;
+            }
+
+            50% {
+                color: rgba(148, 79, 0, 0.753);
+                left: 30px;
+            }
+
+            100% {
+                color: rgb(226, 185, 97);
+                left: -30px;
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+
+        .textoInicio {
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+
+            @keyframes animacionTexto {
+                0% {
+                    color: rgb(226, 185, 97);
+                    left: -250px;
+                }
+
+                50% {
+                    color: rgba(148, 79, 0, 0.753);
+                    left: 250px;
+                }
+
+                100% {
+                    color: rgb(226, 185, 97);
+                    left: -249px;
+                }
+            }
+        }
+    }
+
+    .imgInicio {
+        width: $imgInicio;
+        z-index: -1;
+    }
+}
+
+/*Pagina Galeria*/
+.mainGaleria {
+    @extend %displayMain !optional;
+    background-color: rgba(0, 0, 0);
+    background-image: linear-gradient(to bottom, $colorDos, $colorTres);
+
+    .imgCarousel {
+        border: solid 20px rgb(218, 217, 217);
+        margin: 30px;
+    }
+}
+
+/*Pagina Quien Soy*/
+
+.mainQuienSoy {
+    background-color: $backgroundMain;
+
+
+    .parrafoQuienSoy {
+        color: $secondary-color;
+        font-size: $fontSize3;
+        font-family: $poppins;
+
+    }
+
+    .imgQuienSoy {
+        width: $imgQuienSoyWidth;
+        height: $imgQuienSoyHeight;
+    }
+}
+
+.mainServicios {
+    background-color: $backgroundMain;
+
+
+
+    .cardServicios {
+        border: solid 2px rgb(0, 0, 0);
+        border-radius: 18px;
+        background: white;
+
+        &:hover {
+            box-shadow: 5px 5px 15px rgba(180, 180, 180, 0.9);
+        }
+
+        .card-text{
+            border: solid 1 px red;
+        }
+
+    }
+}
+
+/*Pagina Contacto*/
+
+.mainContacto {
+    background-color: $backgroundMain;
+    color: $primary-color;
+
+    .titulosContacto {
+        margin: 30px 0px 30px 0px;
+    }
+
+    .textosRedesContacto {
+        margin-left: 20px;
+        font-size: 14px;
+        color: $secondary-color;
+    }
+    .labelForm{
+        color: $secondary-color;
+    }
+
+}
